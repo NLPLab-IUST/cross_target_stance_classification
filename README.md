@@ -24,7 +24,7 @@ First of all you need to download **glove.twitter.27B.200d** from kaggle (https:
   * sklearn 0.0
   * h5py 2.10.0
 
-you can use the following code to install all dependencies:
+you can use the following command to install all dependencies:
 
 
 ```
@@ -37,7 +37,7 @@ pip install -r requirements.txt
 First of all you should change a file. go to your_venv_name/lib/python3.7/site-packages/gensim/models/ldamodel.py and line 56:
 change **from scipy.misc import logsumexp** to **from scipy.special import logsumexp**
 
-In the second step, create cache and model folder in the folder which named data. Then, run data_util.py to fill those folders.
+In the second step, create cache and model folder in the folder named data. Then, run data_util.py to fill those folders.
 
 On windows (Train and test):
 
@@ -45,4 +45,10 @@ On windows (Train and test):
 1.   set PYTHONPATH=%PYTHONPATH%;C:\path_to_project\cross_target_stance_classification\
 2.   C:\path_to_python\python.exe C:\path_to_project\cross_target_stance_classification\train_model_CrossNet_keras.py -tr_te --target cc_cc --n_aspect 1 --bsize 128 --rnn_dim 128 --dense_dim 64 --dropout_rate 0.2 --max_epoch 200 --learning_rate 0.001
 
-**NOTE:** you can change -tr_te to train, test and ts in order to use other functionalities.
+**OR** you can use the following code command to train and test all targets:
+
+'''
+bash ./runModel.bash
+'''
+
+**NOTE:** you can change -tr_te to train, test and ts(test_single_stance) in order to use other functionalities.
