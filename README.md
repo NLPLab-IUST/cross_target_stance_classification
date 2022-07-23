@@ -37,7 +37,7 @@ pip install -r requirements.txt
 First of all you should change a file. go to your_venv_name/lib/python3.7/site-packages/gensim/models/ldamodel.py and line 56:
 change **from scipy.misc import logsumexp** to **from scipy.special import logsumexp**
 
-In the second step, create cache and model folder in the folder which named data. Then, run the data_util.py to fill those folders.
+In the second step, create cache and model folder in the folder which named data. Then, run data_util.py to fill those folders.
 
 On windows (Train and test):
 
