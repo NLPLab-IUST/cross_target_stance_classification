@@ -39,6 +39,8 @@ change **from scipy.misc import logsumexp** to **from scipy.special import logsu
 
 In the second step, create cache and model folder in the folder named data. Then, run data_util.py to fill those folders.
 
+Don't forget to change the DATA_DIR path in config.py to your desired path.
+
 On windows (Train and test):
 
 
