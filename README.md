@@ -47,8 +47,8 @@ On windows (Train and test):
 
 **OR** you can use the following code command to train and test all targets:
 
-'''
+```
 bash ./runModel.bash
-'''
+```
 
 **NOTE:** you can change -tr_te to train, test and ts(test_single_stance) in order to use other functionalities.
